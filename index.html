@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Резюме - Владислав Семенов</title>
+    <!-- Подключение Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Основные стили для страницы */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #ddd; /* Измените здесь первое значение для увеличения толщины рамки */
+            margin-right: 20px;
+        }
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profile-header h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .profile-header p {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #555;
+        }
+        .profile-header a {
+            color: #2a9d8f;
+            text-decoration: none;
+        }
+        .profile-header a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h3 {
+            font-size: 22px;
+            color: #336f62;
+            border-bottom: 2px solid #2a9d8f;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .section ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+        .section ul li {
+            margin-bottom: 8px;
+        }
+        .project {
+            margin-bottom: 15px;
+        }
+        .project h4 {
+            font-size: 18px;
+        }
+        .project p {
+            margin: 5px 0;
+            color: #666;
+        }
+        /* Переключатель языка */
+        .language-switcher {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .language-switcher button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            border: 0;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #2a9d8f;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+        .language-switcher button:hover {
+            background-color: #264653;
+        }
+        .language-switcher button.active {
+            background-color: #336f62;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Переключатель языка -->
+<div class="language-switcher">
+    <button id="ru" class="active">Русский</button>
+    <button id="en">English</button>
+</div>
+
+<div class="container">
+    <div class="profile-header">
+        <div class="profile-image">
+            <img src="profile_photo.jpeg" alt="Profile Photo">
+        </div>
+        <div>
+            <h1 data-translate="name"></h1>
+            <p data-translate="position"></p>
+            <p>Email: <a href="mailto:i@vladmcliar.ru">i@vladmcliar.ru</a></p>
+            <p>Telegram: <a href="https://t.me/SheLaughss">@SheLaughss</a></p>
+            <p data-translate="location"></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 data-translate="profile"></h3>
+        <p data-translate="profile-text"></p>
+    </div>
+
+    <div class="section">
+        <h3 data-translate="about-me"></h3>
+        <p data-translate="summary"></p>
+    </div>
+
+    <div class="section">
+        <h3 data-translate="cases"></h3>
+        <div class="project">
+            <h4 data-translate="case1-title"></h4>
+            <p data-translate="case1-desc"></p>
+        </div>
+        <div class="project">
+            <h4 data-translate="case2-title"></h4>
+            <p data-translate="case2-desc"></p>
+        </div>
+        <div class="project">
+            <h4 data-translate="case3-title"></h4>
+            <p data-translate="case3-desc"></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 data-translate="skills"></h3>
+        <ul>
+            <li><strong>Python</strong></li>
+            <li><strong>SQL</strong></li>
+            <li><strong data-translate="english-language"></strong></li>
+            <li><strong data-translate="extra-skill1"></strong>: <span data-translate="extra-skill1-desc"></span></li>
+            <li><strong data-translate="extra-skill2"></strong>: <span data-translate="extra-skill2-desc"></span></li>
+            <li><strong data-translate="extra-skill3"></strong>: <span data-translate="extra-skill3-desc"></span></li>
+            <li><strong data-translate="process-optimization"></strong>: <span data-translate="process-optimization-desc"></span></li>
+            <li><strong data-translate="technology-implementation"></strong>: <span data-translate="technology-implementation-desc"></span></li>
+            <li><strong data-translate="presentation-skills"></strong>: <span data-translate="presentation-skills-desc"></span></li>
+            <li><strong data-translate="creative-thinking"></strong>: <span data-translate="creative-thinking-desc"></span></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3 data-translate="work-experience"></h3>
+        <h4>AI Centre Tinkoff Software — <span data-translate="position"></span></h4>
+        <p data-translate="employment-period"></p>
+        <ul>
+            <li data-translate="work-description1"></li>
+            <li data-translate="work-description2"></li>
+            <li data-translate="work-description3"></li>
+            <li data-translate="work-description4"></li>
+            <li data-translate="work-description5"></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3 data-translate="education"></h3>
+        <ul>
+            <li data-translate="education1"></li>
+            <li data-translate="education2"></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3 data-translate="contact"></h3>
+        <p>Email: <a href="mailto:i@vladmcliar.ru">i@vladmcliar.ru</a></p>
+        <p>Telegram: <a href="https://t.me/SheLaughss">@SheLaughss</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/SheLaughss">linkedin.com/in/SheLAughss</a></p>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Диапазон перевода фраз на разные языки
+    const translations = {
+        'ru': {
+            'title': 'Резюме - Владислав Семенов',
+            'name': 'Владислав Семенов',
+            'position': 'Технический менеджер продукта',
+            'profile': 'Профессиональный профиль',
+            'profile-text': 'Я стремлюсь быть надежным партнером для своей команды и бизнеса, приводя проекты к успешной реализации. Меня привлекают сложные задачи и вызовы, где я могу применить свои аналитические и управленческие навыки для достижения лучших результатов.',
+            'location': 'Санкт-Петербург',
+            'about-me': 'Обо мне',
+            'summary': 'Middle Technical Product Manager с акцентом на улучшение операционной эффективности и внедрение новаторских решений. Я не люблю сидеть на месте и постоянно ищу способы улучшить процессы и создать что-то новое. В работе я нацелен на результат и всегда готов поддержать коллег.',
+            'cases': 'Проекты',
+            'case1-title': 'Чат-бот Тинькофф Джуниор',
+            'case1-desc': 'Координировал запуск чат-бота, который изменил подход к общению с клиентами и оптимизировал процессы. Участвовал в анализе и разработке методов по предотвращению флуда.',
+            'case2-title': 'Инструмент классификации и кластеризации намерений',
+            'case2-desc': 'Разработал новый инструмент для глубокой классификации намерений клиентов, который получил признание пользователей и был успешно внедрен в рабочие процессы.',
+            'case3-title': 'Интеграция Ассистента Джуниор',
+            'case3-desc': 'Способствовал внедрению Ассистента Джуниор — чатбота на базе LLM "T-GPT" собственной разработки компании. Участвовал в техническом планировании и поддержке интеграции в чат поддержки.',
+            'skills': 'Навыки',
+            'english-language': 'Английский B2',
+            'extra-skill1': 'Управление проектами',
+            'extra-skill1-desc': 'Опыт в Agile, Scrum, Kanban, Notion.',
+            'extra-skill2': 'Аналитические навыки',
+            'extra-skill2-desc': 'Интуитивное понимание данных и их использование для принятия решений.',
+            'extra-skill3': 'Работа в команде',
+            'extra-skill3-desc': 'Способность вести диалог и находить общий язык с коллегами.',
+            'process-optimization': 'Оптимизация процессов',
+            'process-optimization-desc': 'Создание и внедрение эффективных стратегий для повышения результативности.',
+            'technology-implementation': 'Внедрение технологий',
+            'technology-implementation-desc': 'Обеспечение успешного внедрения новых технологий.',
+            'presentation-skills': 'Навыки презентации',
+            'presentation-skills-desc': 'Способность убедительно доносить идеи до аудитории.',
+            'creative-thinking': 'Креативное мышление',
+            'creative-thinking-desc': 'Подход к решению проблем с нестандартной точки зрения.',
+            'work-experience': 'Опыт работы',
+            'employment-period': 'Август 2022 — настоящее время',
+            'work-description1': 'Веду продуктовую стратегию и планирование, достигаю значительных результатов в автоматизации процессов.',
+            'work-description2': 'Улучшал имеющиеся решения и внедрял новые инструменты для анализа данных.',
+            'work-description3': 'Организовывал работу команды и взаимодействие между различными отделами бизнеса.',
+            'work-description4': 'Успешно улучшал ключевые показатели эффективности и добивался завершения проектов в рамках установленного времени и бюджета.',
+            'work-description5': 'Управлял взаимодействием между разработчиками, тестированием и маркетинговыми командами для достижения наилучших результатов.',
+            'education': 'Образование',
+            'education1': 'Российская таможенная академия, 2016-2022',
+            'education2': 'Яндекс.Практикум - Python Developer, 2022-2023',
+            'contact': 'Контактные данные'
+        },
+        'en': {
+            'title': 'Resume - Vladislav Semenov',
+            'name': 'Vladislav Semenov',
+            'position': 'Technical Product Manager',
+            'profile': 'Professional Profile',
+            'profile-text': 'I aspire to be a reliable partner for my team and business, driving projects to successful completion. I am drawn to complex challenges where I can apply my analytical and management skills to achieve outstanding results.',
+            'location': 'Saint-Petersburg',
+            'about-me': 'About Me',
+            'summary': 'Middle Technical Product Manager focused on improving operational efficiency and introducing innovative solutions. I’m always on the lookout for ways to enhance processes and build something new. I’m results-driven and constantly available to support my colleagues at work.',
+            'cases': 'Projects',
+            'case1-title': 'Chatbot Tinkoff Junior',
+            'case1-desc': 'Coordinated the launch of a chatbot that transformed customer interaction and optimized processes. Participated in the analysis and development of methods to prevent spam.',
+            'case2-title': 'Intent Classification and Clustering Tool',
+            'case2-desc': 'Developed a new tool for in-depth client intent classification, which received positive feedback and was successfully integrated into workflows.',
+            'case3-title': 'Integration of Junior-Assistant',
+            'case3-desc': "Facilitated the deployment of Junior-Assistant, a brand new chatbot based on our native LLM - T-GPT. Contributed to the technical planning and support of its integration to Support chat.",
+            'skills': 'Skills',
+            'english-language': 'English B2',
+            'extra-skill1': 'Project Management',
+            'extra-skill1-desc': 'Experience in Agile, Scrum, Kanban, Notion.',
+            'extra-skill2': 'Analytical Skills',
+            'extra-skill2-desc': 'Intuitive understanding of data usage and its application in decision-making.',
+            'extra-skill3': 'Team Collaboration',
+            'extra-skill3-desc': 'Ability to engage in dialogue and find common ground with colleagues.',
+            'process-optimization': 'Process Optimization',
+            'process-optimization-desc': 'Creating and implementing effective strategies to improve performance.',
+            'technology-implementation': 'Technology Implementation',
+            'technology-implementation-desc': 'Ensuring successful implementation of new technologies.',
+            'presentation-skills': 'Presentation Skills',
+            'presentation-skills-desc': 'Ability to convincingly communicate ideas to an audience.',
+            'creative-thinking': 'Creative Thinking',
+            'creative-thinking-desc': 'Approach to problem-solving from a non-standard perspective.',
+            'work-experience': 'Work Experience',
+            'employment-period': 'August 2022 — Present',
+            'work-description1': 'Leading product strategy and planning, achieving significant results in process automation.',
+            'work-description2': 'Enhanced existing solutions and developed new tools for data analysis.',
+            'work-description3': 'Organized team workflows and facilitated collaboration between various business departments.',
+            'work-description4': 'Successfully improved key performance indicators and ensured project completion within time and budget constraints.',
+            'work-description5': 'Managed interactions between development, testing, and marketing teams to achieve the best results.',
+            'education': 'Education',
+            'education1': 'Russian Customs Academy, 2016-2022',
+            'education2': 'Yandex Practicum - Python Developer, 2022-2023',
+            'contact': 'Contact'
+        }
+    };
+
+    // Переключение языков
+    const langButtons = document.querySelectorAll('.language-switcher button');
+    
+    langButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const selectedLang = button.id;
+            setLanguage(selectedLang);
+
+            langButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+        });
+    });
+
+    // Функция для установки языка
+    function setLanguage(language) {
+        document.querySelectorAll('[data-translate]').forEach(element => {
+            const translateKey = element.getAttribute('data-translate');
+            element.innerText = translations[language][translateKey];
+        });
+
+        // Обновляем title страницы
+        document.title = translations[language]['title'];
+    }
+
+    // Установить язык по умолчанию
+    setLanguage('ru');
+});
+</script>
+
+</body>
+</html>
