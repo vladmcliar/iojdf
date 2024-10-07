@@ -28,14 +28,16 @@
             display: flex;
             align-items: center;
             padding: 20px 0;
+            flex-wrap: wrap;
         }
         .profile-image {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             overflow: hidden;
-            border: 2px solid #ddd; /* Измените здесь первое значение для увеличения толщины рамки */
+            border: 2px solid #ddd;
             margin-right: 20px;
+            flex-shrink: 0;
         }
         .profile-image img {
             width: 100%;
@@ -74,16 +76,6 @@
         }
         .section ul li {
             margin-bottom: 8px;
-        }
-        .project {
-            margin-bottom: 15px;
-        }
-        .project h4 {
-            font-size: 18px;
-        }
-        .project p {
-            margin: 5px 0;
-            color: #666;
         }
         /* Переключатель языка */
         .language-switcher {
